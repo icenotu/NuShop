@@ -9,5 +9,12 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
+
+  exports.view = {
+    mapping: {
+      '.html': 'ejs',
+      '.nj': 'nunjucks',
+    },
+  };
   return config;
 };
